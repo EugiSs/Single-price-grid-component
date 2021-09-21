@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1.5;
+}
+:root {
+  --Cyan: hsl(179, 61%, 44%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Pale-Cyan: hsl(179, 47%, 52%);
+}
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 2.4rem;
+  color: var(--Cyan);
+  margin-bottom: 2rem;
+}
+h4 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 1rem;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  height: 4.5rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--Bright-Yellow);
+  margin-top: 3rem;
+  box-shadow: 0 0 10px 2px grey;
+}
+.card {
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px 2px grey;
+}
+.card-top {
+  background-color: #fff;
+  padding: 4rem;
+  width: 72rem;
+  height: 22rem;
+}
+.card-top__text {
+  color: var(--Grayish-Blue);
+}
+.card-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-main__sign-up {
+  background-color: var(--Cyan);
+  padding: 4rem;
+  width: 50%;
+  height: 26rem;
+}
+.card-main-price {
+  font-weight: 700;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.card-main-price > span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  opacity: 0.5;
+  padding-left: 1.5rem;
+}
+.card-main__features {
+  background-color: var(--Pale-Cyan);
+  padding: 4rem;
+  width: 50%;
+  height: 26rem;
+}
+.features {
+  font-size: 1.4rem;
+  list-style-type: none;
+  margin-left: -4rem;
+  color: var(--Light-Gray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  background-color: var(--Light-Gray);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 35rem;
+    height: 74rem;
+    border-radius: 0.5rem;
+  }
+  .card-top {
+    width: 35rem;
+    height: 26rem;
+    padding: 2rem;
+  }
+  .card-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-main__sign-up {
+    width: 35rem;
+    padding: 2rem;
+    height: 24rem;
+  }
+  .card-main__features {
+    width: 35rem;
+    padding: 2rem;
+    height: 24rem;
+  }
+}
